@@ -1,1 +1,2 @@
 # Content-Compliance-Checker
+This workflow demonstrates a quality-control loop. You submit a content request, a Generator Agent writes the content, and then a separate Reviewer Agent checks it against 4 compliance rules (no PII, professional tone, under 200 words, no unsubstantiated claims). If ALL 4 checks pass, the content is approved. If ANY fail, the workflow routes it to a FAIL branch — in a real system, this would trigger a rewrite or human review.
